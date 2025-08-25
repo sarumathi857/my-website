@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flexbox Layout</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 20px;
+  gap: 20px;
+}
+
+.header,
+.footer {
+  background-color: #00aaff;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.content-row {
+  display: flex;
+  flex: 1;
+  gap: 20px;
+}
+
+.twin-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.twin {
+  background-color: orange;
+  color: white;
+  padding: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.main-content {
+  background-color: limegreen;
+  color: black;
+  flex: 2;
+  padding: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.sidebar {
+  background-color: purple;
+  color: white;
+  padding: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+</style>
+<body>
+  <div class="container">
+    <div class="header">.header</div>
+    
+    <div class="content-column">
+      <div class="twin-row">
+        <div class="twin">.twin</div>
+        <div class="twin">.twin</div>
+      </div>
+      <div class="main-content">.main-content</div>
+      <div class="sidebar">.sidebar</div>
+    </div>
+
+    <div class="footer">.footer</div>
+  </div>
+</body>
+</html>
+
+

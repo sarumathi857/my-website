@@ -1,0 +1,28 @@
+<style>
+    .grid-container
+    {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap:10px;
+        background-color: aqua;
+        padding: 10px;
+    }
+     .grid-container>div
+     {
+        background-color: cadetblue;
+        text-align: center
+        padding 10px;
+     }
+     .item1
+     {
+        grid: area 1px / 2px / 3px / 2px;
+     }
+</style>
+<div class="grid-container">
+<div class="item1">1</div>
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>
+</div>
